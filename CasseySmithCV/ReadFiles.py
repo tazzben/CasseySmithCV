@@ -1,6 +1,4 @@
-import pandas as pd
 import os
-import sys
 from .Simulation import SimulationTable, defaultStateList
 
 def importStateWeights(path):
