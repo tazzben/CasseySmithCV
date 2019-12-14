@@ -24,3 +24,19 @@ Run all combinations of [20, 30] plants and [0.5, 1] sigma values and save the r
 from CasseySmithCV import runSimulation, SimulationTable, SaveSimulationTable
 SaveSimulationTable('filename.csv', [20, 30],[0.5, 1])
 ```
+
+## Installation 
+
+This package can be installed by using either the pip or conda command:
+
+### Installing by pip
+
+```
+pip install CasseySmithCV
+```
+
+### Installing by conda
+
+```
+conda install -c tazzben casseysmithcv
+```
