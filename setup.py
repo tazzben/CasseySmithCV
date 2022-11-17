@@ -2,13 +2,13 @@ from distutils.core import setup
 
 setup(
     name='CasseySmithCV',
-    version='0.0.1',
+    version='0.0.2',
     packages=['CasseySmithCV',],
     license='MIT',
     install_requires=[
         'numpy',
         'pandas',
-        'progress'
+        'tqdm'
     ],
     author='Ben Smith',
     author_email='bosmith@unomaha.edu',
@@ -23,6 +23,6 @@ setup(
     ],
     keywords = ['Monte Carlo', 'EG Statistic', 'Statistics'],
     url = 'https://github.com/tazzben/CasseySmithCV',
-    download_url = 'https://github.com/tazzben/CasseySmithCV/archive/v0.0.1.tar.gz',  
+    download_url = 'https://github.com/tazzben/CasseySmithCV/archive/v0.0.2.tar.gz',  
     description = 'Produces critical values using the methods described in Cassey Smith (2014).  Code is modernized from version published with paper to take advantage of advances in computing.'
 )

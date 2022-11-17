@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from multiprocessing import Pool
 from itertools import product
-from progress.bar import Bar
+from tqdm import tqdm
 
 
 def FindState(
@@ -111,10 +111,7 @@ def SimulationTable(ns, sigmas, stateList=defaultStateList(), R=100000, critical
 	"""
 	loops = list(product(ns, sigmas))
 	r = []
-	bar = Bar('Processing', max=len(loops))
-	for row in loops:
+	for row in tqdm(loops):
 		r.append(runSimulation(row[0], row[1], stateList, R, criticalValues, HHIConfInterval))
-		bar.next()
-	bar.finish()
 	return pd.DataFrame(r)
 
